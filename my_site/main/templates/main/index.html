@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<main>
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>This is the home page of the site where you can add and also
+            view news and find our contact information</p>
+        <a href="{% url 'about' %}" class="btn btn-warning">To the About me page</a>
+    </div>
+</main>
+
+{% endblock %}
